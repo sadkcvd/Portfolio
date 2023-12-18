@@ -76,7 +76,6 @@ return <div>hello {data.name}!</div>
 
     return (
         <div>
-
             <div className='flex flex-col items-center text-center gap-2'>
                 <Image
                     alt='banner'
