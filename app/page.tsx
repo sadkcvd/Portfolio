@@ -4,9 +4,9 @@ import Section from "./_Components/Section/Section";
 
 export default function Home() {
   return (
-    <main className="h-full flex flex-col">
+    <div className="flex flex-col items-center h-full justify-between">
       <Hero />
       <Section />
-    </main>
+    </div>
   )
 }

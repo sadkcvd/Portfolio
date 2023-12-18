@@ -15,7 +15,7 @@ const Navbar = () => {
         <nav className="p-8">
             <div className="container mx-auto flex items-center justify-center sm:justify-between">
 
-                <div className="font-bold text-2xl">
+                <div className="flex-shrink-0">
                     <Link href={menuItems[0].link}>
                         <Image
                             alt='Logo'
@@ -26,9 +26,9 @@ const Navbar = () => {
                     </Link>
                 </div>
 
-                <ul className="space-x-8 hidden sm:flex">
+                <ul className="hidden sm:flex space-x-8">
                     {menuItems.map((item, index) => (
-                        <li key={index} className='font-bold border-b-2 border-transparent hover:border-violet-600 duration-300'>
+                        <li key={index} className='font-semibold border-b-2 border-transparent hover:border-violet-600 duration-300'>
                             <Link href={item.link}>
                                 {item.label}
                             </Link>
@@ -43,7 +43,7 @@ const Navbar = () => {
                 </div>
 
             </div>
-        </nav >
+        </nav>
     )
 }
 
