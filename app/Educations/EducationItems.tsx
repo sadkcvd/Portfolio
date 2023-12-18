@@ -34,8 +34,8 @@ const EducationItems = () => {
                     </div>
 
                     <div className='flex flex-col items-center text-center'>
-                        <h1>{item.name}</h1>
-                        <p>{item.description}</p>
+                        <h1 className='font-bold'>{item.name}</h1>
+                        <p className='font-semibold'>{item.description}</p>
                     </div>
                 </Link>
             ))}
