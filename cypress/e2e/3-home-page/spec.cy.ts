@@ -29,13 +29,13 @@
 // Test Suite
 describe('Video Record Test', () => {
   beforeEach(() => {
-    cy.visit('localhost:3000');
+    cy.visit('http://localhost:3000/');
   });
 
   it('Should Record Video', () => {
 
     it('Sayfayı Ziyaret Etme', () => {
-      cy.url().should('eq', 'localhost:3000');
+      cy.url().should('eq', 'http://localhost:3000/');
     });
 
     it('Navbar Logo Görünürlüğü', () => {
@@ -51,19 +51,19 @@ describe('Video Record Test', () => {
 //Test Suite
 describe('Home Page Tests', () => {
   beforeEach(() => {
-    cy.visit('localhost:3000');
+    cy.visit('http://localhost:3000/');
   });
 
   it('Sayfayı Ziyaret Etme', () => {
-    cy.url().should('eq', 'localhost:3000');
-    // cy.screenshot('Sayfa-yüklendi');
+    cy.url().should('eq', 'http://localhost:3000/');
+    cy.screenshot('Sayfa-yüklendi');
   });
 
   it('Navbar Logo Görünürlüğü', () => {
     cy.get('#logo')
       .should('exist')
       .and('be.visible');
-    // cy.screenshot('Navbar-Logo');
+    cy.screenshot('Navbar-Logo');
   });
 
   it('Menu Items Görünürlüğü', () => {
