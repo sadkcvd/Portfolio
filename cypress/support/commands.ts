@@ -35,3 +35,14 @@
 //     }
 //   }
 // }
+
+
+// Cypress.Commands.add('checkElementVisibility', (selector) => {
+//   cy.wrap(selector)
+//     .should('exist')
+//     .and('be.visible');
+// });
+
+export {
+
+}

@@ -18,6 +18,7 @@ const Navbar = () => {
                 <div className="flex-shrink-0">
                     <Link href={menuItems[0].link}>
                         <Image
+                            id='logo'
                             alt='Logo'
                             src={Logo}
                             width={150}
@@ -29,7 +30,7 @@ const Navbar = () => {
                 <ul className="hidden sm:flex space-x-8">
                     {menuItems.map((item, index) => (
                         <li key={index} className='font-semibold border-b-2 border-transparent hover:border-violet-600 duration-300'>
-                            <Link href={item.link}>
+                            <Link href={item.link} id={item.label}>
                                 {item.label}
                             </Link>
                         </li>

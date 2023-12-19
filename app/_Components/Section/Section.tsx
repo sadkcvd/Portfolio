@@ -6,6 +6,7 @@ const Section = () => {
     return (
         <section>
             <Image
+                id='section-devices-image'
                 alt='HeroImage'
                 src={HeroImage}
                 width={800}
